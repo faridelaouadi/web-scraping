@@ -20,5 +20,3 @@ soup = BeautifulSoup(page.text, 'html.parser')
 f = open("index.html", "w")
 f.write(soup.prettify())
 f.close()
-
-#we now can see exactly what the request is for
