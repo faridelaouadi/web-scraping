@@ -13,4 +13,4 @@ A Django web app to find the best deals for a given search term. User's will be 
 - Search for a given term
 - View results in descending order of the biggest price drop
 
-![alt text][ui.png]
+![alt text](ui.png)
