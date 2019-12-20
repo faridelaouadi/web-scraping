@@ -1,61 +1,8 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-	<title>Boxing Day Deals</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7cRoboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+{% extends 'deals/header.html' %}
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" integrity="sha256-/sdxenK1NDowSNuphgwjv8wSosSNZB0t5koXqd7XqOI=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" integrity="sha256-LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0=" crossorigin="anonymous" />
+{% block content %}
 
-	<!-- Main Stylesheets -->
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'deals/css/style.css' %}"/>
-
-
-
-</head>
-<body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-
-	<!-- Header Section -->
-	<header class="header-section">
-		<a href="#" class="site-logo">
-			<img src="{% static 'deals/img/logo.png' %}" alt="My image">
-		</a>
-		<nav class="header-nav">
-			<ul class="main-menu">
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">About</a></li>
-				<!--<li><a href="#">Pages</a>
-					<ul class="sub-menu">
-						<li><a href="about-us.html">About Us</a></li>
-						<li><a href="search-result.html">Search Result</a></li>
-						<li><a href="single-property.html">Property</a></li>
-					</ul>
-				</li>-->
-				<li><a href="#">News</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<div class="header-right">
-				<button type="button" class="btn btn-light">Register</button>
-				<button type="button" class="btn btn-dark">Sign In</button>
-			</div>
-		</nav>
-	</header>
-	<!-- Header Section end -->
-
-	<!-- Hero Section end -->
-
 	<section class="hero-section set-bg" data-setbg="{% static 'deals/img/hero-bg.jpg' %}">
 		<div class="container">
 			<div class="hero-warp">
@@ -80,15 +27,5 @@
 			</div>
 		</div>
 	</section>
-	<!-- Hero Section end -->
-
-	<!--====== Javascripts & Jquery ======-->
-
-	<script src="{% static 'deals/js/jquery-3.2.1.min.js' %}"></script>
-	<script src="{% static 'deals/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'deals/js/jquery.slicknav.min.js' %}"></script>
-	<script src="{% static 'deals/js/jquery.magnific-popup.min.js' %}"></script>
-	<script src="{% static 'deals/js/main.js' %}"></script>
-
-	</body>
-</html>
+	
+{% endblock %}
