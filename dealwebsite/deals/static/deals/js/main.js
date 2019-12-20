@@ -9,6 +9,21 @@ $(window).on('load', function() {
 
 });
 
+document.getElementById("tech").addEventListener("click", tech_clicked);
+document.getElementById("clothing").addEventListener("click", clothing_clicked);
+
+function tech_clicked(){
+	console.log("tech label has been clicked")
+}
+
+function clothing_clicked(){
+	console.log("clothing label has been clicked")
+}
+
+function search_function(search_term){
+	console.log("we are searching for "+(document.getElementById("search_term").value))
+}
+
 (function($) {
 	/*------------------
 		Navigation
