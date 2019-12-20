@@ -30,7 +30,6 @@
 	<!-- Header Section -->
 	<header class="header-section">
 		<a href="#" class="site-logo">
-			{% load static %}
 			<img src="{% static 'deals/img/logo.png' %}" alt="My image">
 		</a>
 		<nav class="header-nav">
@@ -56,7 +55,8 @@
 	<!-- Header Section end -->
 
 	<!-- Hero Section end -->
-	<section class="hero-section set-bg" data-setbg="img/hero-bg.jpg">
+
+	<section class="hero-section set-bg" data-setbg="{% static 'deals/img/hero-bg.jpg' %}">
 		<div class="container">
 			<div class="hero-warp">
 				<form class="main-search-form">
@@ -82,7 +82,6 @@
 	<!-- Hero Section end -->
 
 	<!--====== Javascripts & Jquery ======-->
-	{% load static %}
 
 	<script src="{% static 'deals/js/jquery-3.2.1.min.js' %}"></script>
 	<script src="{% static 'deals/js/bootstrap.min.js' %}"></script>
