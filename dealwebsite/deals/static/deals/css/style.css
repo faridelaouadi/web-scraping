@@ -89,6 +89,7 @@ Helper CSS
 .section-title {
 	text-align: center;
 	margin-bottom: 65px;
+	background-color: red;
 }
 
 .section-title h2 {

@@ -29,7 +29,7 @@ function clothing_clicked(){
 }
 
 function change_background(image){
-	$("#home_bg").fadeOut();
+	$("#home_bg").fadeOut(10);
 	$('#home_bg').css('background-image', 'url(' + image + ')');
 	$("#home_bg").fadeIn(1000);
 }
