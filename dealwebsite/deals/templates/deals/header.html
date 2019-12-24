@@ -24,10 +24,9 @@
 		<div class="loader"></div>
 	</div>
 
-	<!-- Header Section -->
 	<header class="header-section">
-		<a href="#" class="site-logo">
-			<img src="{% static 'deals/img/logo.png' %}" alt="My image">
+		<a href="index.html" class="site-logo">
+			<img src="{% static 'deals/img/logo.png' %}" alt="">
 		</a>
 		<nav class="header-nav">
 			<ul class="main-menu">
@@ -44,8 +43,10 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 			<div class="header-right">
-				<button type="button" class="btn btn-light">Register</button>
-				<button type="button" class="btn btn-dark">Sign In</button>
+				<div class="user-panel">
+					<a href="#" class="register">Register</a>
+					<a href="#" class="register">Login</a>
+				</div>
 			</div>
 		</nav>
 	</header>

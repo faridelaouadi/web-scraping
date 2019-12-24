@@ -358,6 +358,14 @@ Header section
 	margin-left: 25px;
 }
 
+.register:hover{
+	border: 2px solid #ff000a;
+	min-width: 130px;
+	text-align: center;
+	padding: 8px 15px;
+	margin-left: 25px;
+}
+
 .slicknav_menu {
 	display: none;
 }
@@ -459,4 +467,198 @@ Hero section
 .search-input.si-v-2 .sb-light {
 	margin-left: 25px;
 	min-width: 203px;
+}
+
+
+.sell-section .section-title {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 975px) {
+	.header-section {
+		padding: 0 15px;
+	}
+	.site-logo {
+		padding: 26px 0;
+	}
+	.header-nav {
+		display: none;
+	}
+	.slicknav_menu {
+		padding: 0;
+		display: block;
+		background: transparent;
+	}
+	.slicknav_menu .header-right-warp {
+		padding: 10px 0;
+		padding-right: 10px;
+		border-bottom: 1px solid #111;
+		text-align: right;
+	}
+	.slicknav_menu .header-right .login {
+		border-bottom: none;
+	}
+	.slicknav_menu .header-right .register {
+		margin-left: 0;
+	}
+	.slicknav_menu .header-right a:hover {
+		background: transparent;
+		color: #fff;
+	}
+	.slicknav_btn {
+		background: #616161;
+		margin-top: 29px;
+	}
+	.slicknav_nav {
+		background: #22242b;
+		margin-bottom: 30px;
+	}
+	.slicknav_nav a {
+		margin: 0;
+		padding: 10px 20px;
+		border-bottom: 1px solid #111;
+	}
+	.slicknav_nav a:hover {
+		color: #ff000a;
+		border-radius: 0;
+		background: #0b0e25;
+	}
+	.slicknav_nav .slicknav_row {
+		padding: 10px 20px;
+		margin: 0;
+	}
+	.slicknav_row a {
+		border-bottom: none;
+	}
+	.slicknav_nav .slicknav_row:hover {
+		border-radius: 0;
+		background: #0b0e25;
+	}
+	.slicknav_parent.slicknav_open {
+		background: #0b0e25;
+		color: #ff000a;
+	}
+	.hero-section {
+		height: auto;
+		padding-top: 250px;
+		padding-bottom: 100px;
+	}
+	.hero-warp {
+		padding: 25px 20px 29px;
+	}
+	.about-text {
+		margin-top: 40px;
+	}
+	.search-type label {
+		margin-right: 5px;
+	}
+	.search-type .st-item input:checked+label {
+		padding: 11px;
+	}
+	.search-input {
+		display: block;
+	}
+	.search-input input,
+	.search-input.si-v-2 input {
+		width: 100%;
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+	.section-title h2,
+	.about-text h2 {
+		font-size: 45px;
+	}
+	.loan-section {
+		padding: 0 15px;
+	}
+	.loan-form {
+		display: block;
+		text-align: center;
+		padding: 0 15px;
+	}
+	.loan-form input {
+		margin-bottom: 30px;
+	}
+	.about-widget {
+		border-right: none;
+	}
+	.about-widget .aw-text {
+		max-width: 100%;
+	}
+	.footer-widger h2 {
+		padding-top: 0;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.page-top-section {
+		height: auto;
+		padding-bottom: 80px;
+	}
+	.search-input.si-v-2 {
+		margin-bottom: 0;
+	}
+	.search-input.si-v-2 .site-btn {
+		margin: 0 25px 25px 0;
+	}
+	.search-results {
+		padding: 55px 30px 90px;
+	}
+	.search-results .filter-btn li {
+		margin-right: 10px;
+	}
+	.search-result-map {
+		height: 500px;
+	}
+	.sidebar {
+		padding-top: 50px;
+	}
+	.contact-text {
+		padding-right: 0;
+	}
+	.sell-section {
+		padding: 0 15px;
+	}
+}
+
+/* Small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+	.section-title h2,
+	.about-text h2 {
+		font-size: 38px;
+	}
+	.search-type label:after {
+		display: none;
+	}
+	.section-title p {
+		padding: 25px 0 10px;
+	}
+	.about-widget {
+		margin-right: 0;
+	}
+	.site-btn.sb-big {
+		padding: 21px 25px;
+	}
+	.search-results {
+		padding: 55px 15px 90px;
+	}
+	.search-results .filter-btn li {
+		margin-right: 0;
+	}
+	.property-info-bar {
+		padding: 11px 15px 13px;
+	}
+	.loan-calculator {
+		padding: 30px 15px 25px;
+	}
+	.contact-form {
+		padding: 50px 20px;
+	}
+	.contact-form .site-btn {
+		min-width: auto;
+	}
 }
