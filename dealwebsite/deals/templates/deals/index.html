@@ -3,18 +3,18 @@
 {% block content %}
 
 	{% load static %}
-	<section class="hero-section set-bg" data-setbg="{% static 'deals/img/hero-bg.jpg' %}">
+	<section class="hero-section set-bg" id="home_bg" data-setbg="{% static 'deals/img/computer.jpg' %}">
 		<div class="container">
 			<div class="hero-warp">
 				<form class="main-search-form" method="POST">
 					{% csrf_token %}
 					<div class="search-type">
 						<div class="st-item">
-							<input type="radio" name="st" id="tech" checked>
+							<input type="radio" name="st" id="tech" checked onclick="tech_clicked()">
 							<label for="tech">Tech</label>
 						</div>
 						<div class="st-item">
-							<input type="radio" name="st" id="clothing">
+							<input type="radio" name="st" id="clothing" onclick="clothing_clicked()">
 							<label for="clothing">Clothing</label>
 						</div>
 					</div>

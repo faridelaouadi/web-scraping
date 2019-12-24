@@ -16,11 +16,13 @@ $(window).on('load', function() {
 
 
 function tech_clicked(){
-	console.log("tech label has been clicked")
+	$('#home_bg').data('setbg', "{% static 'deals/img/computer.jpg' %}");
+	console.log("tech clicked");
 }
 
 function clothing_clicked(){
-	console.log("clothing label has been clicked")
+	$('#home_bg').data('setbg', "{% static 'deals/img/hero-bg.jpg' %}");
+	console.log("clothing clicked");
 }
 
 function search_function(search_term){
