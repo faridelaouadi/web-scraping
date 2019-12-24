@@ -17,15 +17,21 @@ $(window).on('load', function() {
 
 function tech_clicked(){
 	var bg = "/static/deals/img/computer.jpg"
-	$('#home_bg').css('background-image', 'url(' + bg + ')');
+	change_background(bg)
 	console.log("tech clicked");
 }
 
 function clothing_clicked(){
 	var bg = "/static/deals/img/hero-bg.jpg"
-	$('#home_bg').css('background-image', 'url(' + bg + ')');
+	change_background(bg)
 	console.log("clothing clicked");
 
+}
+
+function change_background(image){
+	$("#home_bg").fadeOut();
+	$('#home_bg').css('background-image', 'url(' + image + ')');
+	$("#home_bg").fadeIn(1000);
 }
 
 function search_function(search_term){
