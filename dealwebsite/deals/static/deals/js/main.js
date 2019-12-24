@@ -16,13 +16,16 @@ $(window).on('load', function() {
 
 
 function tech_clicked(){
-	$('#home_bg').data('setbg', "{% static 'deals/img/computer.jpg' %}");
+	var bg = "/static/deals/img/computer.jpg"
+	$('#home_bg').css('background-image', 'url(' + bg + ')');
 	console.log("tech clicked");
 }
 
 function clothing_clicked(){
-	$('#home_bg').data('setbg', "{% static 'deals/img/hero-bg.jpg' %}");
+	var bg = "/static/deals/img/hero-bg.jpg"
+	$('#home_bg').css('background-image', 'url(' + bg + ')');
 	console.log("clothing clicked");
+
 }
 
 function search_function(search_term){
@@ -48,6 +51,7 @@ function search_function(search_term){
 	--------------------*/
 	$('.set-bg').each(function() {
 		var bg = $(this).data('setbg');
+		//console.log("this is the value of the background --> "+ bg)
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
