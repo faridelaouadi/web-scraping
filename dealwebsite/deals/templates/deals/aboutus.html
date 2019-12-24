@@ -1,0 +1,42 @@
+{% extends 'deals/header.html' %}
+
+{% block content %}
+
+	{% load static %}
+	<section class="sell-section ">
+		<div class="sell-warp spad set-bg" data-setbg="{% static 'deals/img/sell-bg.jpg' %}">
+			<div class="container text-white">
+				<div class="section-title">
+					<h2>How it works</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="sell-item">
+							<div class="si-icon"><span>01.</span></div>
+							<h3>Search</h3>
+							<p>Search for a product using the interface on the homepage</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="sell-item">
+							<div class="si-icon"><span>02.</span></div>
+							<h3>Compare</h3>
+							<p>View the list of products that have been found by crawling deals on various websites like Amazon</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="sell-item">
+							<div class="si-icon"><span>03.</span></div>
+							<h3>Purchase</h3>
+							<p>When you find a product that you like, you can simply click it and it will redirect you to the retailers page. </p>
+						</div>
+					</div>
+				</div>
+				<div class="text-center pt-5 mt-3">
+					<p class="site-btn sb-big">All links are affiliate links which means we get a small cut when you make a purchase</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

@@ -6,11 +6,14 @@ $(window).on('load', function() {
 	--------------------*/
 	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
+	if (window.location.href.indexOf('index.html') > -1) {
+		document.getElementById("tech").addEventListener("click", tech_clicked);
+		document.getElementById("clothing").addEventListener("click", clothing_clicked);
+  }
 
 });
 
-document.getElementById("tech").addEventListener("click", tech_clicked);
-document.getElementById("clothing").addEventListener("click", clothing_clicked);
+
 
 function tech_clicked(){
 	console.log("tech label has been clicked")

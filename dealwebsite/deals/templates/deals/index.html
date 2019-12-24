@@ -6,7 +6,8 @@
 	<section class="hero-section set-bg" data-setbg="{% static 'deals/img/hero-bg.jpg' %}">
 		<div class="container">
 			<div class="hero-warp">
-				<form class="main-search-form">
+				<form class="main-search-form" method="POST">
+					{% csrf_token %}
 					<div class="search-type">
 						<div class="st-item">
 							<input type="radio" name="st" id="tech" checked>
@@ -19,13 +20,13 @@
 					</div>
 					<div class="search-input">
 						<input type="text" placeholder="Search by keyword..." id="search_term">
-						<button type="button" class="btn btn-danger" onclick="search_function()">Search for deals</button>
-						<button type="button" class="btn btn-warning">Feeling Lucky</button>
+						<button type="submit" class="btn btn-danger" onclick="search_function()">Search for deals</button>
+						<button type="submit" class="btn btn-warning">Feeling Lucky</button>
 					</div>
 					<p>We take your keyword and automatically search on many platforms to find you the best deals on the market!</p>
 				</form>
 			</div>
 		</div>
 	</section>
-	
+
 {% endblock %}
