@@ -398,7 +398,7 @@ Hero section
  -------------------*/
 
 .hero-section {
-	height: 824px;
+	height: 100%;
 	padding-top: 325px;
 }
 
@@ -565,7 +565,7 @@ Hero section
 		color: #ff000a;
 	}
 	.hero-section {
-		height: auto;
+		height: 100%;
 		padding-top: 250px;
 		padding-bottom: 100px;
 	}
